@@ -88,14 +88,8 @@ __(function() {
             firstName: { type: 'string' },
             lastName: { type: 'string' },
             email: { type: 'string', format: 'email' },
-            phoneNumbers: {
-              type: 'object',
-              properties: {
-                home: { type: 'string' },
-                work: { type: 'string' },
-                mobile: { type: 'string' }
-              },
-            },
+            phoneMobile: { type: 'string' },
+            phoneWork: { type: 'string' }
           },
           required: [ '_id', 'firstName' ],
           additionalProperties: false
