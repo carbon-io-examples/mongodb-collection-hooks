@@ -8,7 +8,7 @@ We encourage you to clone the git repository so you can play around
 with the code. 
 
 ```
-% git clone git@github.com:carbon-io/example__contact-service.git
+% git clone git@github.com:tfogo/example__simple-rest-api.git
 % cd example__contact-service
 % npm install
 ```
