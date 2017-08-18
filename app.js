@@ -116,7 +116,7 @@ __(function() {
          */
         insert: function(obj, reqCtx) {
           var result = this.getCollection().insertObject(obj)
-          return this._publicView(result)
+          return result
         },
 
         /****************************************************************************************************************
@@ -152,10 +152,6 @@ __(function() {
             result = this.getCollection().find({}).sort({ firstName: 1 }).toArray()
           }
 
-          result = result.map(function(contact) {
-            return self._publicView(contact)
-          })
-
           return result
         },
 
@@ -178,7 +174,7 @@ __(function() {
          */
         findObject: function(id) {
           var result = this.getCollection().findOne({ _id: id })
-          return this._publicView(result)
+          return result
         },
 
         /****************************************************************************************************************
@@ -197,30 +193,6 @@ __(function() {
          */
         getCollection: function() {
           return this.service.db.getCollection(this.collection)
-        },
-
-        /****************************************************************************************************************
-         * _publicView
-         */
-        _publicView: function(obj) {
-          var result = {
-            _id: obj._id,
-            phoneNumbers: obj.phoneNumbers || {}
-          }
-
-          if (obj.firstName) {
-            result.firstName = obj.firstName
-          }
-
-          if (obj.lastName) {
-            result.lastName = obj.lastName
-          }
-
-          if (obj.email) {
-            result.email = obj.email
-          }
-
-          return result
         }
 
       })
