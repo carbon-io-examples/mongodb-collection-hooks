@@ -25,7 +25,7 @@ __(function() {
     /***************************************************************************
      * service
      */
-    service: _o('../app.js'),
+    service: _o('../lib/ContactService.js'),
   
     /***************************************************************************
      * setup
@@ -70,9 +70,7 @@ __(function() {
               firstName: "Mary",
               lastName: "Smith",
               email: "mary@smith.com",
-              phoneNumbers: {
-                mobile: "415-555-5555"
-              }
+              phoneMobile: "415-555-5555"
             }
           }
         },
@@ -138,9 +136,7 @@ __(function() {
               firstName: "Mary",
               lastName: "Smith",
               email: "mary.smith@gmail.com", // We are changing email
-              phoneNumbers: {
-                mobile: "415-555-5555"
-              }
+              phoneMobile: "415-555-5555"
             }
           }
         },
