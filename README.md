@@ -8,7 +8,7 @@ We encourage you to clone the git repository so you can play around
 with the code. 
 
 ```
-% git clone git@github.com:tfogo/example__simple-rest-api.git
+% git clone git@github.com:carbon-io-guides/example__simple-rest-service.git
 % cd example__contact-service
 % npm install
 ```
@@ -67,4 +67,4 @@ or
 ```
 
 * [View current documentation](
-http://htmlpreview.github.io/?https://raw.githubusercontent.com/tfogo/example__simple-rest-api/master/docs/index.html)
+http://htmlpreview.github.io/?https://raw.githubusercontent.com/carbon-io-guides/example__simple-rest-api/master/docs/index.html)
