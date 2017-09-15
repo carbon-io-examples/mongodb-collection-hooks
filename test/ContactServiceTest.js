@@ -1,5 +1,4 @@
 var assert = require('assert')
-
 var carbon = require('carbon-io')
 var o      = carbon.atom.o(module)
 var _o     = carbon.bond._o(module)
@@ -52,8 +51,6 @@ __(function() {
      * tests
      */
     tests: [
-      
-      
 
       /*************************************************************************
        * POST /contacts
@@ -180,8 +177,6 @@ __(function() {
           statusCode: 404 // We should get 404 since this contact is already removed. 
         }
       },
-
     ]
-
   })
 })
