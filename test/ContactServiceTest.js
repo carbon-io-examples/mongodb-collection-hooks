@@ -25,7 +25,7 @@ __(function() {
      * service
      */
     service: _o('../lib/ContactService.js'),
-  
+
     /***************************************************************************
      * setup
      */
@@ -45,7 +45,7 @@ __(function() {
     /***************************************************************************
      * suppressServiceLogging
      */
-    suppressServiceLogging: true,
+    suppressServiceLogging: false,
 
     /***************************************************************************
      * tests
@@ -57,7 +57,7 @@ __(function() {
        *
        * Test adding a new contact.
        */
-      {  
+      {
         name: "POST /contacts",
         reqSpec: function(context) {
           return {
@@ -93,7 +93,7 @@ __(function() {
           }
         },
         resSpec: {
-          statusCode: 200, 
+          statusCode: 200,
         }
       },
 
@@ -119,8 +119,8 @@ __(function() {
       /*************************************************************************
        * PUT /contacts/:_id
        *
-       * Test saving changes to the contact via PUT. Here we are saving back the 
-       * entire object. 
+       * Test saving changes to the contact via PUT. Here we are saving back the
+       * entire object.
        */
       {
         name: "PUT /contacts/:_id",
@@ -138,7 +138,7 @@ __(function() {
           }
         },
         resSpec: {
-          statusCode: 204
+          statusCode: 200
         }
       },
 
@@ -156,7 +156,7 @@ __(function() {
           }
         },
         resSpec: {
-          statusCode: 204
+          statusCode: 200
         }
       },
 
@@ -174,7 +174,7 @@ __(function() {
           }
         },
         resSpec: {
-          statusCode: 404 // We should get 404 since this contact is already removed. 
+          statusCode: 404 // We should get 404 since this contact is already removed.
         }
       },
     ]
