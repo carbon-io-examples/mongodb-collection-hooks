@@ -75,4 +75,4 @@ $ node lib/ContactService gen-static-docs --flavor aglio --out docs/index.html
 ```
 
 * [View current documentation](
-http://htmlpreview.github.io/?https://raw.githubusercontent.com/carbon-io-examples/example__simple-rest-api/tree/carbon-0.7/docs/index.html)
+http://htmlpreview.github.io/?https://raw.githubusercontent.com/carbon-io-examples/contacts-service-simple/blob/carbon-0.7/docs/index.html)
