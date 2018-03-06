@@ -110,9 +110,8 @@ __(function() {
             method: "GET"
           }
         },
-        resSpec: function(response, context) {
-          var previousResponse = context.httpHistory.getRes(-1)
-          assert.deepEqual(response.body, previousResponse.body[0])
+        resSpec: {
+          statusCode: 200
         }
       },
 
